@@ -4,58 +4,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Result Form</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-    <style type="text/css">
-      .login-form {
-        width: 340px;
-          margin: 50px auto;
-      }
-        .login-form form {
-          margin-bottom: 15px;
-            background: #f7f7f7;
-            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-            padding: 30px;
-        }
-        .login-form h2 {
-            margin: 0 0 15px;
-        }
-        .form-control, .btn {
-            min-height: 38px;
-            border-radius: 2px;
-        }
-        .btn {        
-            font-size: 15px;
-            font-weight: bold;
-        }
-    </style>
     
    
     
  </head>
  
- <body style="background-color: #121212;">
+ <body onLoad="window.scroll(0, 600)">
 
-    
-
-    <div class="login-form">
-      <form action="" method="post" onsubmit="return(checkform())">
-          <h2 class="text-center">Result Form</h2>       
-          <div class="form-group">
-              <input type="number" class="form-control" id="roll_no" placeholder="Roll No." required="required">
-          </div>
-          <div class="form-group">
-              <input type="text" class="form-control" id="m_name" placeholder="Mother's Name" required="required">
-          </div>
-          <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-block">Submit</button>
-          </div>
+  <nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="image/saraswati.png" alt="logo" width="50" height="60"> कै. त्रिंबकराव कोरडे माध्यमिक विद्यालय</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+<section class="home">
+</section>
+<div class= "result-image2">
+    <div class= "">
+        <div class="login-form">
+            <form action="" method="post" onsubmit="return(checkform())">
+                <h2 class="text-center">Result Form</h2>       
+                <div class="form-group">
+                    <input type="number" class="form-control" id="roll_no" placeholder="Roll No." required="required">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="m_name" placeholder="Mother's Name" required="required">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </div>
                
-      </form>
-      
-  </div>
-   
+            </form>
+        </div>
+    </div>
+</div>  
     <script type='text/javascript'>
       function checkform(){
           if(document.getElementById("roll_no").value == '1' && document.getElementById("m_name").value == 'meena' ){
@@ -66,4 +66,21 @@
           }
       }
       </script>
+
+
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
 </html>
