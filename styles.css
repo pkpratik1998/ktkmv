@@ -30,7 +30,7 @@ body {
 
 .nav div.logo a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(241, 20, 20);
     font-size: 2.5rem;
 }
 
@@ -95,7 +95,15 @@ body {
     transition: all 0.4s ease;
 }
 
+.pageheight{
+    height: 1000px;
+}
 
+.poster{
+    margin-top: 20px;
+
+    
+}
 
 /* Media qurey section */
 
@@ -152,7 +160,17 @@ body {
         display: block;
     }
     .home {
-        height: 40vh;
+        height: 25vh;
+        
+    }
+    .pageheight{
+        height: 380px;
+    }
+    .poster{
+        margin-top: 0px;
+        margin-bottom: 5px;
+        width: 380px;
+        height: 130px;
         
     }
 }
@@ -454,10 +472,10 @@ body {
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     }
     .login-form1 {
-        width: 135px;
+        width: 145px;
         
         height: 220px;
-        margin-right: 20px;
+        margin-right: 0px;
         margin-top: 0px;
         padding-top: 25px;
         background: #ebe9e984;
@@ -466,7 +484,7 @@ body {
       }
     .stbtn{
         height: 20px;
-        width: 86px;
+        width: 90px;
         font-size: x-small;
         border: 0px;
     }
@@ -489,14 +507,14 @@ body {
   }
 @media screen and (max-width: 756px){
     .box{
-        width: 300px;
-        height: 200px;
-        margin-left: 15px;
-        margin-right: 15px;
+        width: 250px;
+        height: 150px;
+        margin-left: 5px;
+        margin-right: 0px;
     }
     .imagesize{
-        width: 270px;
-        height: 170px;
+        width: 220px;
+        height: 120px;
     }
 
 }
